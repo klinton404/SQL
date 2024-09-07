@@ -1,0 +1,5 @@
+To check all the user in mater database
+>>  select * from master.sys.server_principals
+
+If you only the name of the user in database
+>>  select [Name] from master.sys.server_principals
