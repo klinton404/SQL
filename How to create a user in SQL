@@ -1,0 +1,12 @@
+USE [master]
+GO
+
+Create LOGIN KlinBhai
+    WITH PASSWORD    = N'Abc_123',
+	CHECK_POLICY     = OFF,
+	CHECK_EXPIRATION = OFF;
+
+GO
+EXEC sp_addsrvrolemember
+    @loginame = N'KlinBhai',
+  	@rolename = N'sysadmin';
